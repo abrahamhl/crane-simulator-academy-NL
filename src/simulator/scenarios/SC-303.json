@@ -1,0 +1,60 @@
+{
+  "id": "SC-303",
+  "order": 3,
+  "programme": "tower_site",
+  "machine": "MC-TWR-45M",
+  "environment": "ENV-SITE-LARGE",
+  "weather": "fog",
+  "title": {
+    "en": "Blind set-down behind the frame",
+    "es": "Entrega a ciegas tras la estructura",
+    "nl": "Blind neerzetten achter het skelet"
+  },
+  "briefing": {
+    "en": "You cannot see the set-down from the cab: the concrete frame is between you and it, and the fog takes care of whatever the frame does not. Press B to ask the signaller, and use the hook camera. This is the normal condition on a real site, not an unfair one.",
+    "es": "No ves la entrega desde la cabina: la estructura de hormigón está en medio y la niebla se ocupa del resto. Pulsa B para preguntar al señalista y usa la cámara de gancho. Esta es la situación normal en obra, no una trampa.",
+    "nl": "Je ziet de afzetplek niet vanuit de cabine. Druk op B voor de seingever."
+  },
+  "teaches": [
+    "blind_lift",
+    "signaller",
+    "fog",
+    "camera_use"
+  ],
+  "payload_kg": 1500,
+  "below_hook_kg": 150,
+  "load_size": [
+    1.8,
+    1,
+    1.4
+  ],
+  "load_material": "wood",
+  "rigging": {
+    "legs": 4,
+    "angle_deg": 60,
+    "wll_per_leg_kg": 2000
+  },
+  "pickup": {
+    "x": 8,
+    "z": 22,
+    "radius": 2.2
+  },
+  "dropoff": {
+    "x": 41,
+    "z": 6,
+    "radius": 2
+  },
+  "wind_ms": 2,
+  "success": {
+    "max_swing_deg": 5,
+    "dwell_s": 2,
+    "height_tol_m": 1.4,
+    "placement_tol_m": 0.8,
+    "time_target_s": 340
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": false,
+    "require_signaller": true
+  }
+}

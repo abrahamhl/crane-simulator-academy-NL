@@ -1,0 +1,59 @@
+{
+  "id": "SC-504",
+  "order": 4,
+  "programme": "port_rail",
+  "machine": "MC-RAIL-25T",
+  "environment": "ENV-RAILYARD",
+  "weather": "night",
+  "title": {
+    "en": "You cannot reach it from here",
+    "es": "Desde aquí no llegas",
+    "nl": "Van hieraf haal je het niet"
+  },
+  "briefing": {
+    "en": "5.15 t gross. From where the crane is standing, the set-down is roughly 16 m away and the chart does not allow it — check with H and you will see the LMI go red before you have moved anything. This crane travels on the rail (Q and E). Drive to the work, then lift.",
+    "es": "5,15 t brutas. Desde donde está la grúa, la entrega queda a unos 16 m y la tabla no lo permite: comprueba con H y verás el LMI en rojo antes de mover nada. Esta grúa avanza por el carril (Q y E). Acércate y luego iza.",
+    "nl": "5,15 ton bruto. Vanaf deze plek is de afzet ~16 m en dat staat de tabel niet toe. Rijd eerst (Q en E)."
+  },
+  "teaches": [
+    "travel_to_reduce_radius",
+    "load_chart",
+    "night",
+    "adjacent_track"
+  ],
+  "payload_kg": 5000,
+  "below_hook_kg": 150,
+  "load_size": [
+    3.2,
+    0.9,
+    2.2
+  ],
+  "load_material": "rail_steel",
+  "rigging": {
+    "legs": 2,
+    "angle_deg": 55,
+    "wll_per_leg_kg": 6000
+  },
+  "pickup": {
+    "x": 30,
+    "z": -12,
+    "radius": 2.4
+  },
+  "dropoff": {
+    "x": 46,
+    "z": 1.5,
+    "radius": 2
+  },
+  "wind_ms": 5,
+  "success": {
+    "max_swing_deg": 5,
+    "dwell_s": 2,
+    "height_tol_m": 1.4,
+    "placement_tol_m": 0.8,
+    "time_target_s": 380
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": true
+  }
+}

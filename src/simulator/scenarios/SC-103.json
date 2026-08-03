@@ -1,0 +1,58 @@
+{
+  "id": "SC-103",
+  "order": 3,
+  "programme": "basic_indoor",
+  "machine": "MC-OVH-05T",
+  "environment": "ENV-HALL",
+  "weather": "overcast",
+  "title": {
+    "en": "Full length of the hall",
+    "es": "Toda la longitud de la nave",
+    "nl": "Over de volle hallengte"
+  },
+  "briefing": {
+    "en": "Nearly fifty metres of travel. Momentum is the whole problem: start the load moving, let it settle, and plan the stop long before you need it. Keep clear of the marked pedestrian walkway.",
+    "es": "Casi cincuenta metros de recorrido. El problema es la inercia: arranca, deja que se estabilice y planifica la parada mucho antes. Mantente fuera del pasillo peatonal marcado.",
+    "nl": "Bijna vijftig meter rijden. Traagheid is het probleem. Blijf van het looppad."
+  },
+  "teaches": [
+    "momentum",
+    "swing_control",
+    "walkway"
+  ],
+  "payload_kg": 650,
+  "below_hook_kg": 40,
+  "load_size": [
+    1.4,
+    0.9,
+    1.2
+  ],
+  "load_material": "concrete",
+  "rigging": {
+    "legs": 2,
+    "angle_deg": 55,
+    "wll_per_leg_kg": 1200
+  },
+  "pickup": {
+    "x": 6,
+    "z": 6,
+    "radius": 1.8
+  },
+  "dropoff": {
+    "x": 54,
+    "z": 13,
+    "radius": 1.8
+  },
+  "wind_ms": 3,
+  "success": {
+    "max_swing_deg": 4,
+    "dwell_s": 1.5,
+    "height_tol_m": 1,
+    "placement_tol_m": 0.8,
+    "time_target_s": 280
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": false
+  }
+}

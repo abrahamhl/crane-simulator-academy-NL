@@ -1,0 +1,58 @@
+{
+  "id": "SC-104",
+  "order": 4,
+  "programme": "basic_indoor",
+  "machine": "MC-OVH-16T",
+  "environment": "ENV-HALL",
+  "weather": "overcast",
+  "title": {
+    "en": "Twelve tonnes on the big crane",
+    "es": "Doce toneladas en la grúa grande",
+    "nl": "Twaalf ton op de grote kraan"
+  },
+  "briefing": {
+    "en": "The 16 t crane, at three quarters of its rating. Everything is slower and nothing stops quickly. The controls are identical to the 5 t — the difference is entirely in how far ahead you have to think.",
+    "es": "La grúa de 16 t, a tres cuartos de su capacidad. Todo es más lento y nada se detiene rápido. Los mandos son idénticos a los de 5 t; la diferencia está en cuánto tienes que anticipar.",
+    "nl": "De 16 t-kraan op driekwart van zijn capaciteit. Alles is trager."
+  },
+  "teaches": [
+    "inertia",
+    "heavy_load",
+    "planning"
+  ],
+  "payload_kg": 11500,
+  "below_hook_kg": 500,
+  "load_size": [
+    2.4,
+    1.4,
+    2
+  ],
+  "load_material": "steel_raw",
+  "rigging": {
+    "legs": 4,
+    "angle_deg": 60,
+    "wll_per_leg_kg": 8000
+  },
+  "pickup": {
+    "x": 14,
+    "z": 7,
+    "radius": 2.2
+  },
+  "dropoff": {
+    "x": 40,
+    "z": 11,
+    "radius": 2.2
+  },
+  "wind_ms": 3,
+  "success": {
+    "max_swing_deg": 3,
+    "dwell_s": 2,
+    "height_tol_m": 1.4,
+    "placement_tol_m": 0.8,
+    "time_target_s": 320
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": false
+  }
+}

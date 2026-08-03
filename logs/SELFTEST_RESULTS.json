@@ -1,0 +1,482 @@
+{
+  "all_ok": true,
+  "environments": 5,
+  "godot": "4.6.3-stable (official)",
+  "machines": 7,
+  "passed": 94,
+  "scenarios": 21,
+  "suite": "scene_selftest",
+  "tests": [
+    {
+      "detail": "21 scenarios, 0 load errors",
+      "id": "scenario_db_loaded",
+      "ok": true
+    },
+    {
+      "detail": "7 machines x 5 sites; all wired",
+      "id": "catalog_environment_coverage",
+      "ok": true
+    },
+    {
+      "detail": "8 presets; all scenario weather valid",
+      "id": "weather_presets_exist",
+      "ok": true
+    },
+    {
+      "detail": "Overhead travelling crane 5 t / Puente grúa 5 t in Production hall, Arnhem / Nave de producción, Arnhem (clear); built clean",
+      "id": "build_SC-101",
+      "ok": true
+    },
+    {
+      "detail": "in_zone=true -> controlling=true at (1.0, 0.0, 9.0)",
+      "id": "take_controls",
+      "ok": true
+    },
+    {
+      "detail": "guidance text present on every sampled frame (0 blanks)",
+      "id": "guidance_never_blank",
+      "ok": true
+    },
+    {
+      "detail": "machine has no outriggers (n/a)",
+      "id": "outrigger_interlock_live",
+      "ok": true
+    },
+    {
+      "detail": "3 checks -> powered=true",
+      "id": "pre_use_checks_power_machine",
+      "ok": true
+    },
+    {
+      "detail": "3 control pairs on Overhead travelling crane 5 t / Puente grúa 5 t; all responded",
+      "id": "every_control_moves_its_axis",
+      "ok": true
+    },
+    {
+      "detail": "velocities after ALL STOP: { \"travel\": 0.0, \"trolley\": 0.0, \"hoist\": 0.0 }",
+      "id": "all_stop_brakes_every_axis",
+      "ok": true
+    },
+    {
+      "detail": "modes cycled: [\"orbit\", \"hook\", \"topdown\", \"boom\", \"walk\"]",
+      "id": "camera_modes_valid",
+      "ok": true
+    },
+    {
+      "detail": "radius=0.00 m capacity=5000 kg util=11% stability=stab_stable",
+      "id": "limits_computed",
+      "ok": true
+    },
+    {
+      "detail": "axis 'travel' home=true, operator moved 0.0000 m, powered=false",
+      "id": "reset_machine_not_operator",
+      "ok": true
+    },
+    {
+      "detail": "0 non-finite states over 600 driven steps",
+      "id": "session_physics_finite",
+      "ok": true
+    },
+    {
+      "detail": "Overhead travelling crane 5 t / Puente grúa 5 t in Production hall, Arnhem / Nave de producción, Arnhem (clear); built clean",
+      "id": "build_SC-102",
+      "ok": true
+    },
+    {
+      "detail": "Overhead travelling crane 5 t / Puente grúa 5 t in Production hall, Arnhem / Nave de producción, Arnhem (overcast); built clean",
+      "id": "build_SC-103",
+      "ok": true
+    },
+    {
+      "detail": "Overhead travelling crane 16 t / Puente grúa 16 t in Production hall, Arnhem / Nave de producción, Arnhem (overcast); built clean",
+      "id": "build_SC-104",
+      "ok": true
+    },
+    {
+      "detail": "in_zone=true -> controlling=true at (1.0, 0.0, 9.0)",
+      "id": "take_controls",
+      "ok": true
+    },
+    {
+      "detail": "guidance text present on every sampled frame (0 blanks)",
+      "id": "guidance_never_blank",
+      "ok": true
+    },
+    {
+      "detail": "machine has no outriggers (n/a)",
+      "id": "outrigger_interlock_live",
+      "ok": true
+    },
+    {
+      "detail": "3 checks -> powered=true",
+      "id": "pre_use_checks_power_machine",
+      "ok": true
+    },
+    {
+      "detail": "3 control pairs on Overhead travelling crane 16 t / Puente grúa 16 t; all responded",
+      "id": "every_control_moves_its_axis",
+      "ok": true
+    },
+    {
+      "detail": "velocities after ALL STOP: { \"travel\": 0.0, \"trolley\": 0.0, \"hoist\": 0.0 }",
+      "id": "all_stop_brakes_every_axis",
+      "ok": true
+    },
+    {
+      "detail": "modes cycled: [\"orbit\", \"hook\", \"topdown\", \"boom\", \"walk\"]",
+      "id": "camera_modes_valid",
+      "ok": true
+    },
+    {
+      "detail": "radius=0.00 m capacity=16000 kg util=75% stability=stab_stable",
+      "id": "limits_computed",
+      "ok": true
+    },
+    {
+      "detail": "axis 'travel' home=true, operator moved 0.0000 m, powered=false",
+      "id": "reset_machine_not_operator",
+      "ok": true
+    },
+    {
+      "detail": "0 non-finite states over 600 driven steps",
+      "id": "session_physics_finite",
+      "ok": true
+    },
+    {
+      "detail": "Overhead travelling crane 5 t / Puente grúa 5 t in Production hall, Arnhem / Nave de producción, Arnhem (night); built clean",
+      "id": "build_SC-105",
+      "ok": true
+    },
+    {
+      "detail": "Lorry loader crane 8 tm / Grúa autocargante 8 tm in Street works, city centre / Obra en calle, centro urbano (clear); built clean",
+      "id": "build_SC-201",
+      "ok": true
+    },
+    {
+      "detail": "in_zone=true -> controlling=true at (-4.6, 0.0, 3.4)",
+      "id": "take_controls",
+      "ok": true
+    },
+    {
+      "detail": "guidance text present on every sampled frame (0 blanks)",
+      "id": "guidance_never_blank",
+      "ok": true
+    },
+    {
+      "detail": "slew locked while stowed=true, deployed=true",
+      "id": "outrigger_interlock_live",
+      "ok": true
+    },
+    {
+      "detail": "4 checks -> powered=true",
+      "id": "pre_use_checks_power_machine",
+      "ok": true
+    },
+    {
+      "detail": "4 control pairs on Lorry loader crane 8 tm / Grúa autocargante 8 tm; all responded",
+      "id": "every_control_moves_its_axis",
+      "ok": true
+    },
+    {
+      "detail": "velocities after ALL STOP: { \"slew\": 0.0, \"luff\": 0.0, \"telescope\": 0.0, \"hoist\": 0.0 }",
+      "id": "all_stop_brakes_every_axis",
+      "ok": true
+    },
+    {
+      "detail": "modes cycled: [\"orbit\", \"hook\", \"topdown\", \"boom\", \"walk\"]",
+      "id": "camera_modes_valid",
+      "ok": true
+    },
+    {
+      "detail": "radius=1.84 m capacity=3200 kg util=27% stability=stab_stable",
+      "id": "limits_computed",
+      "ok": true
+    },
+    {
+      "detail": "axis 'slew' home=true, operator moved 0.0000 m, powered=false",
+      "id": "reset_machine_not_operator",
+      "ok": true
+    },
+    {
+      "detail": "0 non-finite states over 600 driven steps",
+      "id": "session_physics_finite",
+      "ok": true
+    },
+    {
+      "detail": "Lorry loader crane 8 tm / Grúa autocargante 8 tm in Street works, city centre / Obra en calle, centro urbano (overcast); built clean",
+      "id": "build_SC-202",
+      "ok": true
+    },
+    {
+      "detail": "Lorry loader crane 8 tm / Grúa autocargante 8 tm in Street works, city centre / Obra en calle, centro urbano (rain); built clean",
+      "id": "build_SC-203",
+      "ok": true
+    },
+    {
+      "detail": "Lorry loader crane 8 tm / Grúa autocargante 8 tm in Street works, city centre / Obra en calle, centro urbano (overcast); built clean",
+      "id": "build_SC-204",
+      "ok": true
+    },
+    {
+      "detail": "Tower crane, 45 m jib / Grúa torre, pluma 45 m in Housing construction site / Obra de edificación residencial (clear); built clean",
+      "id": "build_SC-301",
+      "ok": true
+    },
+    {
+      "detail": "in_zone=true -> controlling=true at (4.6, 0.0, -4.6)",
+      "id": "take_controls",
+      "ok": true
+    },
+    {
+      "detail": "guidance text present on every sampled frame (0 blanks)",
+      "id": "guidance_never_blank",
+      "ok": true
+    },
+    {
+      "detail": "machine has no outriggers (n/a)",
+      "id": "outrigger_interlock_live",
+      "ok": true
+    },
+    {
+      "detail": "3 checks -> powered=true",
+      "id": "pre_use_checks_power_machine",
+      "ok": true
+    },
+    {
+      "detail": "3 control pairs on Tower crane, 45 m jib / Grúa torre, pluma 45 m; all responded",
+      "id": "every_control_moves_its_axis",
+      "ok": true
+    },
+    {
+      "detail": "velocities after ALL STOP: { \"slew\": 0.0, \"trolley\": 0.0, \"hoist\": 0.0 }",
+      "id": "all_stop_brakes_every_axis",
+      "ok": true
+    },
+    {
+      "detail": "modes cycled: [\"orbit\", \"hook\", \"topdown\", \"boom\", \"walk\"]",
+      "id": "camera_modes_valid",
+      "ok": true
+    },
+    {
+      "detail": "radius=18.00 m capacity=5300 kg util=40% stability=stab_stable",
+      "id": "limits_computed",
+      "ok": true
+    },
+    {
+      "detail": "axis 'slew' home=true, operator moved 0.0000 m, powered=false",
+      "id": "reset_machine_not_operator",
+      "ok": true
+    },
+    {
+      "detail": "0 non-finite states over 600 driven steps",
+      "id": "session_physics_finite",
+      "ok": true
+    },
+    {
+      "detail": "Tower crane, 45 m jib / Grúa torre, pluma 45 m in Housing construction site / Obra de edificación residencial (overcast); built clean",
+      "id": "build_SC-302",
+      "ok": true
+    },
+    {
+      "detail": "Tower crane, 45 m jib / Grúa torre, pluma 45 m in Housing construction site / Obra de edificación residencial (fog); built clean",
+      "id": "build_SC-303",
+      "ok": true
+    },
+    {
+      "detail": "Tower crane, 45 m jib / Grúa torre, pluma 45 m in Housing construction site / Obra de edificación residencial (dusk); built clean",
+      "id": "build_SC-304",
+      "ok": true
+    },
+    {
+      "detail": "Mobile telescopic crane 40 t / Grúa móvil telescópica 40 t in Street works, city centre / Obra en calle, centro urbano (clear); built clean",
+      "id": "build_SC-401",
+      "ok": true
+    },
+    {
+      "detail": "in_zone=true -> controlling=true at (-4.6, 0.0, 3.4)",
+      "id": "take_controls",
+      "ok": true
+    },
+    {
+      "detail": "guidance text present on every sampled frame (0 blanks)",
+      "id": "guidance_never_blank",
+      "ok": true
+    },
+    {
+      "detail": "slew locked while stowed=true, deployed=true",
+      "id": "outrigger_interlock_live",
+      "ok": true
+    },
+    {
+      "detail": "4 checks -> powered=true",
+      "id": "pre_use_checks_power_machine",
+      "ok": true
+    },
+    {
+      "detail": "4 control pairs on Mobile telescopic crane 40 t / Grúa móvil telescópica 40 t; all responded",
+      "id": "every_control_moves_its_axis",
+      "ok": true
+    },
+    {
+      "detail": "velocities after ALL STOP: { \"slew\": 0.0, \"luff\": 0.0, \"telescope\": 0.0, \"hoist\": 0.0 }",
+      "id": "all_stop_brakes_every_axis",
+      "ok": true
+    },
+    {
+      "detail": "modes cycled: [\"orbit\", \"hook\", \"topdown\", \"boom\", \"walk\"]",
+      "id": "camera_modes_valid",
+      "ok": true
+    },
+    {
+      "detail": "radius=4.93 m capacity=26494 kg util=20% stability=stab_stable",
+      "id": "limits_computed",
+      "ok": true
+    },
+    {
+      "detail": "axis 'slew' home=true, operator moved 0.0000 m, powered=false",
+      "id": "reset_machine_not_operator",
+      "ok": true
+    },
+    {
+      "detail": "0 non-finite states over 600 driven steps",
+      "id": "session_physics_finite",
+      "ok": true
+    },
+    {
+      "detail": "Mobile telescopic crane 40 t / Grúa móvil telescópica 40 t in Housing construction site / Obra de edificación residencial (overcast); built clean",
+      "id": "build_SC-402",
+      "ok": true
+    },
+    {
+      "detail": "Mobile telescopic crane 40 t / Grúa móvil telescópica 40 t in Housing construction site / Obra de edificación residencial (clear); built clean",
+      "id": "build_SC-403",
+      "ok": true
+    },
+    {
+      "detail": "Mobile telescopic crane 40 t / Grúa móvil telescópica 40 t in Housing construction site / Obra de edificación residencial (storm); built clean",
+      "id": "build_SC-404",
+      "ok": true
+    },
+    {
+      "detail": "Ship-to-shore container gantry / Grúa pórtico portacontenedores in Container terminal quay / Muelle de terminal de contenedores (clear); built clean",
+      "id": "build_SC-501",
+      "ok": true
+    },
+    {
+      "detail": "in_zone=true -> controlling=true at (6.0, 0.0, 12.0)",
+      "id": "take_controls",
+      "ok": true
+    },
+    {
+      "detail": "guidance text present on every sampled frame (0 blanks)",
+      "id": "guidance_never_blank",
+      "ok": true
+    },
+    {
+      "detail": "machine has no outriggers (n/a)",
+      "id": "outrigger_interlock_live",
+      "ok": true
+    },
+    {
+      "detail": "3 checks -> powered=true",
+      "id": "pre_use_checks_power_machine",
+      "ok": true
+    },
+    {
+      "detail": "3 control pairs on Ship-to-shore container gantry / Grúa pórtico portacontenedores; all responded",
+      "id": "every_control_moves_its_axis",
+      "ok": true
+    },
+    {
+      "detail": "velocities after ALL STOP: { \"travel\": 0.0, \"trolley\": 0.0, \"hoist\": 0.0 }",
+      "id": "all_stop_brakes_every_axis",
+      "ok": true
+    },
+    {
+      "detail": "modes cycled: [\"orbit\", \"hook\", \"topdown\", \"boom\", \"walk\"]",
+      "id": "camera_modes_valid",
+      "ok": true
+    },
+    {
+      "detail": "radius=0.00 m capacity=41000 kg util=68% stability=stab_stable",
+      "id": "limits_computed",
+      "ok": true
+    },
+    {
+      "detail": "axis 'travel' home=true, operator moved 0.0000 m, powered=false",
+      "id": "reset_machine_not_operator",
+      "ok": true
+    },
+    {
+      "detail": "0 non-finite states over 600 driven steps",
+      "id": "session_physics_finite",
+      "ok": true
+    },
+    {
+      "detail": "Ship-to-shore container gantry / Grúa pórtico portacontenedores in Container terminal quay / Muelle de terminal de contenedores (fog); built clean",
+      "id": "build_SC-502",
+      "ok": true
+    },
+    {
+      "detail": "Rail-mounted slewing crane 25 t / Grúa ferroviaria giratoria 25 t in Rail maintenance yard / Base de mantenimiento ferroviario (overcast); built clean",
+      "id": "build_SC-503",
+      "ok": true
+    },
+    {
+      "detail": "in_zone=true -> controlling=true at (6.0, 0.0, -4.4)",
+      "id": "take_controls",
+      "ok": true
+    },
+    {
+      "detail": "guidance text present on every sampled frame (0 blanks)",
+      "id": "guidance_never_blank",
+      "ok": true
+    },
+    {
+      "detail": "slew locked while stowed=true, deployed=true",
+      "id": "outrigger_interlock_live",
+      "ok": true
+    },
+    {
+      "detail": "4 checks -> powered=true",
+      "id": "pre_use_checks_power_machine",
+      "ok": true
+    },
+    {
+      "detail": "4 control pairs on Rail-mounted slewing crane 25 t / Grúa ferroviaria giratoria 25 t; all responded",
+      "id": "every_control_moves_its_axis",
+      "ok": true
+    },
+    {
+      "detail": "velocities after ALL STOP: { \"travel\": 0.0, \"slew\": 0.0, \"luff\": 0.0, \"hoist\": 0.0 }",
+      "id": "all_stop_brakes_every_axis",
+      "ok": true
+    },
+    {
+      "detail": "modes cycled: [\"orbit\", \"hook\", \"topdown\", \"boom\", \"walk\"]",
+      "id": "camera_modes_valid",
+      "ok": true
+    },
+    {
+      "detail": "radius=8.95 m capacity=10591 kg util=24% stability=stab_stable",
+      "id": "limits_computed",
+      "ok": true
+    },
+    {
+      "detail": "axis 'travel' home=true, operator moved 0.0000 m, powered=false",
+      "id": "reset_machine_not_operator",
+      "ok": true
+    },
+    {
+      "detail": "0 non-finite states over 600 driven steps",
+      "id": "session_physics_finite",
+      "ok": true
+    },
+    {
+      "detail": "Rail-mounted slewing crane 25 t / Grúa ferroviaria giratoria 25 t in Rail maintenance yard / Base de mantenimiento ferroviario (night); built clean",
+      "id": "build_SC-504",
+      "ok": true
+    }
+  ],
+  "total": 94
+}

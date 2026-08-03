@@ -1,0 +1,58 @@
+{
+  "id": "SC-101",
+  "order": 1,
+  "programme": "basic_indoor",
+  "machine": "MC-OVH-05T",
+  "environment": "ENV-HALL",
+  "weather": "clear",
+  "title": {
+    "en": "Your first lift",
+    "es": "Tu primer izado",
+    "nl": "Je eerste hijs"
+  },
+  "briefing": {
+    "en": "A 500 kg pallet has to move from the yellow zone to the blue zone. Take the pendant, run the pre-use checks, lower the hook onto the load, then travel. Nothing here is timed hard — get the sequence right.",
+    "es": "Un palé de 500 kg debe pasar de la zona amarilla a la azul. Coge el mando, haz las comprobaciones previas, baja el gancho sobre la carga y traslada. No hay presión de tiempo: lo importante es la secuencia.",
+    "nl": "Een pallet van 500 kg moet van de gele naar de blauwe zone. Pak de hangbediening, doe de controles, laat de haak zakken en rijd."
+  },
+  "teaches": [
+    "hoist",
+    "travel",
+    "sequence"
+  ],
+  "payload_kg": 500,
+  "below_hook_kg": 40,
+  "load_size": [
+    1.2,
+    0.9,
+    1.2
+  ],
+  "load_material": "wood_pallet",
+  "rigging": {
+    "legs": 2,
+    "angle_deg": 60,
+    "wll_per_leg_kg": 1000
+  },
+  "pickup": {
+    "x": 12,
+    "z": 9,
+    "radius": 2
+  },
+  "dropoff": {
+    "x": 24,
+    "z": 5,
+    "radius": 2
+  },
+  "wind_ms": 2,
+  "success": {
+    "max_swing_deg": 8,
+    "dwell_s": 1.2,
+    "height_tol_m": 1.2,
+    "placement_tol_m": 1.2,
+    "time_target_s": 180
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": false
+  }
+}

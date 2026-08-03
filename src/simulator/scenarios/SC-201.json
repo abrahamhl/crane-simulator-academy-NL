@@ -1,0 +1,59 @@
+{
+  "id": "SC-201",
+  "order": 1,
+  "programme": "street_loader",
+  "machine": "MC-LDR-8TM",
+  "environment": "ENV-SITE-STREET",
+  "weather": "clear",
+  "title": {
+    "en": "Set up and lift",
+    "es": "Estacionar e izar",
+    "nl": "Opstellen en hijsen"
+  },
+  "briefing": {
+    "en": "First machine with outriggers. Press O and WAIT — nothing slews, luffs or telescopes until they are fully down. Then a short lift from the road to the laydown behind the lorry.",
+    "es": "Primera máquina con estabilizadores. Pulsa O y ESPERA: no gira, ni eleva, ni telescopa hasta que estén abajo del todo. Después, un izado corto de la calzada al acopio tras el camión.",
+    "nl": "Eerste machine met stempels. Druk op O en WACHT tot ze volledig staan."
+  },
+  "teaches": [
+    "outriggers",
+    "interlock",
+    "slew",
+    "luff"
+  ],
+  "payload_kg": 800,
+  "below_hook_kg": 60,
+  "load_size": [
+    1.2,
+    0.9,
+    1
+  ],
+  "load_material": "concrete",
+  "rigging": {
+    "legs": 2,
+    "angle_deg": 60,
+    "wll_per_leg_kg": 1500
+  },
+  "pickup": {
+    "x": 0,
+    "z": 4.5,
+    "radius": 1.8
+  },
+  "dropoff": {
+    "x": -6,
+    "z": 2.5,
+    "radius": 1.8
+  },
+  "wind_ms": 4,
+  "success": {
+    "max_swing_deg": 7,
+    "dwell_s": 1.5,
+    "height_tol_m": 1.2,
+    "placement_tol_m": 1,
+    "time_target_s": 240
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": true
+  }
+}

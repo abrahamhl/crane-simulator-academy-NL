@@ -1,0 +1,58 @@
+{
+  "id": "SC-204",
+  "order": 4,
+  "programme": "street_loader",
+  "machine": "MC-LDR-8TM",
+  "environment": "ENV-SITE-STREET",
+  "weather": "overcast",
+  "title": {
+    "en": "Reading the chart for the first time",
+    "es": "Leer la tabla por primera vez",
+    "nl": "Voor het eerst de laadtabel lezen"
+  },
+  "briefing": {
+    "en": "1.51 tonnes gross. Press H and find the rated capacity at the radius you will actually be working at. This lift is possible, but only just — you will finish above the 90% pre-alarm, and you should know that before you start rather than after.",
+    "es": "1,51 t brutas. Pulsa H y busca la capacidad nominal al radio real de trabajo. La maniobra es posible, pero por poco: terminarás por encima de la prealarma del 90%, y eso hay que saberlo antes, no después.",
+    "nl": "1,51 ton bruto. Druk op H en zoek de waarde bij je werkelijke vlucht."
+  },
+  "teaches": [
+    "load_chart",
+    "load_moment",
+    "radius_awareness"
+  ],
+  "payload_kg": 1450,
+  "below_hook_kg": 60,
+  "load_size": [
+    1.4,
+    1,
+    1.2
+  ],
+  "load_material": "concrete",
+  "rigging": {
+    "legs": 2,
+    "angle_deg": 60,
+    "wll_per_leg_kg": 2000
+  },
+  "pickup": {
+    "x": 0,
+    "z": 4,
+    "radius": 1.5
+  },
+  "dropoff": {
+    "x": -3.6,
+    "z": 3.7,
+    "radius": 1.4
+  },
+  "wind_ms": 5,
+  "success": {
+    "max_swing_deg": 5,
+    "dwell_s": 1.8,
+    "height_tol_m": 1.2,
+    "placement_tol_m": 0.6,
+    "time_target_s": 280
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": true
+  }
+}

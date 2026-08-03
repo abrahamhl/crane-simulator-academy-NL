@@ -1,0 +1,58 @@
+{
+  "id": "SC-402",
+  "order": 2,
+  "programme": "mobile_advanced",
+  "machine": "MC-MOB-40T",
+  "environment": "ENV-SITE-LARGE",
+  "weather": "overcast",
+  "title": {
+    "en": "Telescoping under load",
+    "es": "Telescopar con carga",
+    "nl": "Telescoperen onder last"
+  },
+  "briefing": {
+    "en": "6.4 t gross, and the set-down is at a radius where the chart gives you barely more than that. You will finish this lift above the 90% pre-alarm. Read the chart (H) first and decide whether you are prepared to be there.",
+    "es": "6,4 t brutas y la entrega está a un radio donde la tabla te da apenas algo más. Terminarás por encima de la prealarma del 90%. Lee la tabla (H) antes y decide si estás dispuesto a estar ahí.",
+    "nl": "6,4 ton bruto, en de afzetplek ligt op een vlucht waar de tabel amper meer geeft."
+  },
+  "teaches": [
+    "load_chart",
+    "load_moment",
+    "telescope"
+  ],
+  "payload_kg": 6000,
+  "below_hook_kg": 400,
+  "load_size": [
+    2.6,
+    1.4,
+    2.2
+  ],
+  "load_material": "concrete",
+  "rigging": {
+    "legs": 4,
+    "angle_deg": 60,
+    "wll_per_leg_kg": 7000
+  },
+  "pickup": {
+    "x": 0,
+    "z": 8,
+    "radius": 2.2
+  },
+  "dropoff": {
+    "x": -11,
+    "z": 8,
+    "radius": 2
+  },
+  "wind_ms": 6,
+  "success": {
+    "max_swing_deg": 4,
+    "dwell_s": 2,
+    "height_tol_m": 1.4,
+    "placement_tol_m": 0.8,
+    "time_target_s": 320
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": true
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "SC-401",
+  "order": 1,
+  "programme": "mobile_advanced",
+  "machine": "MC-MOB-40T",
+  "environment": "ENV-SITE-STREET",
+  "weather": "clear",
+  "title": {
+    "en": "Four axes at once",
+    "es": "Cuatro ejes a la vez",
+    "nl": "Vier assen tegelijk"
+  },
+  "briefing": {
+    "en": "Slew, luff, telescope and hoist. Three of those four change your radius, which means three of them change your rated capacity while you are moving. Deploy the outriggers first (O), then feel how luffing up pulls the load in.",
+    "es": "Giro, elevación, telescopado e izado. Tres de los cuatro cambian tu radio, es decir, tu capacidad nominal mientras te mueves. Despliega primero los estabilizadores (O) y luego siente cómo al subir la pluma la carga se acerca.",
+    "nl": "Zwenken, gieken, telescoperen en hijsen. Drie daarvan wijzigen je vlucht."
+  },
+  "teaches": [
+    "four_axes",
+    "radius_coupling",
+    "outriggers"
+  ],
+  "payload_kg": 5000,
+  "below_hook_kg": 300,
+  "load_size": [
+    2.4,
+    1.4,
+    2
+  ],
+  "load_material": "steel_raw",
+  "rigging": {
+    "legs": 4,
+    "angle_deg": 60,
+    "wll_per_leg_kg": 6000
+  },
+  "pickup": {
+    "x": 0,
+    "z": 5,
+    "radius": 2.2
+  },
+  "dropoff": {
+    "x": -9,
+    "z": 4,
+    "radius": 2.2
+  },
+  "wind_ms": 5,
+  "success": {
+    "max_swing_deg": 6,
+    "dwell_s": 1.8,
+    "height_tol_m": 1.4,
+    "placement_tol_m": 1,
+    "time_target_s": 280
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": true
+  }
+}

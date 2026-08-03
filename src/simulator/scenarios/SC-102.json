@@ -1,0 +1,58 @@
+{
+  "id": "SC-102",
+  "order": 2,
+  "programme": "basic_indoor",
+  "machine": "MC-OVH-05T",
+  "environment": "ENV-HALL",
+  "weather": "clear",
+  "title": {
+    "en": "Precision into the rack aisle",
+    "es": "Precisión en el pasillo de estanterías",
+    "nl": "Nauwkeurig in het stellinggangpad"
+  },
+  "briefing": {
+    "en": "Same crane, much less room. The set-down is a metre and a half from the racking. Use SHIFT creep for the last stretch — a load still swinging when it arrives is a load you cannot place.",
+    "es": "Misma grúa, mucho menos espacio. La entrega está a metro y medio de la estantería. Usa SHIFT en el tramo final: una carga que llega balanceando no se puede depositar.",
+    "nl": "Zelfde kraan, veel minder ruimte. Gebruik SHIFT voor het laatste stuk."
+  },
+  "teaches": [
+    "precision",
+    "creep",
+    "swing_control"
+  ],
+  "payload_kg": 420,
+  "below_hook_kg": 40,
+  "load_size": [
+    1,
+    0.8,
+    1
+  ],
+  "load_material": "wood_pallet",
+  "rigging": {
+    "legs": 4,
+    "angle_deg": 60,
+    "wll_per_leg_kg": 800
+  },
+  "pickup": {
+    "x": 8,
+    "z": 12,
+    "radius": 1.8
+  },
+  "dropoff": {
+    "x": 33,
+    "z": 14,
+    "radius": 1.3
+  },
+  "wind_ms": 2,
+  "success": {
+    "max_swing_deg": 5,
+    "dwell_s": 1.5,
+    "height_tol_m": 1,
+    "placement_tol_m": 0.5,
+    "time_target_s": 220
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": false
+  }
+}

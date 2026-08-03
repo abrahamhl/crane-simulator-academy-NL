@@ -1,0 +1,58 @@
+{
+  "id": "SC-403",
+  "order": 3,
+  "programme": "mobile_advanced",
+  "machine": "MC-MOB-40T",
+  "environment": "ENV-SITE-LARGE",
+  "weather": "clear",
+  "title": {
+    "en": "The pick is the critical moment",
+    "es": "La recogida es el momento crítico",
+    "nl": "Het oppakken is het kritieke moment"
+  },
+  "briefing": {
+    "en": "The load sits 23 m away and you are at 87% of the chart the instant you take its weight. Everything gets easier after that — but only if you bring the radius in as you slew, instead of carrying it round at full reach.",
+    "es": "La carga está a 23 m y estarás al 87% de la tabla en el instante en que tomes su peso. Todo mejora después, pero solo si reduces el radio mientras giras, en vez de llevarla dando la vuelta a pleno alcance.",
+    "nl": "De last ligt 23 m weg; bij het opnemen zit je op 87% van de tabel."
+  },
+  "teaches": [
+    "critical_pick",
+    "radius_reduction",
+    "planning"
+  ],
+  "payload_kg": 1900,
+  "below_hook_kg": 150,
+  "load_size": [
+    2,
+    1.2,
+    1.6
+  ],
+  "load_material": "steel_rusty",
+  "rigging": {
+    "legs": 2,
+    "angle_deg": 55,
+    "wll_per_leg_kg": 2500
+  },
+  "pickup": {
+    "x": -21,
+    "z": 9.4,
+    "radius": 2.2
+  },
+  "dropoff": {
+    "x": 7,
+    "z": 5,
+    "radius": 2
+  },
+  "wind_ms": 5,
+  "success": {
+    "max_swing_deg": 5,
+    "dwell_s": 2,
+    "height_tol_m": 1.4,
+    "placement_tol_m": 0.8,
+    "time_target_s": 340
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": true
+  }
+}

@@ -1,0 +1,20 @@
+# Godot import cache and machine-local ids
+.godot/
+*.uid
+
+# The engine binary is downloaded, not vendored
+tools/
+
+# Local player profile and build output
+build/
+release/
+*.zip
+
+# Commercial material never belongs in the public repository
+COMMERCIAL/
+research/
+memory/
+
+# OS noise
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,57 @@
+{
+  "id": "SC-202",
+  "order": 2,
+  "programme": "street_loader",
+  "machine": "MC-LDR-8TM",
+  "environment": "ENV-SITE-STREET",
+  "weather": "overcast",
+  "title": {
+    "en": "Working beside the public",
+    "es": "Trabajando junto al público",
+    "nl": "Werken naast publiek"
+  },
+  "briefing": {
+    "en": "The pavement on your right is open and busy. The load never crosses it — not briefly, not high, not at all. Plan the slew before you start it.",
+    "es": "La acera de la derecha está abierta y transitada. La carga no la cruza: ni un instante, ni en alto, ni de ninguna forma. Planifica el giro antes de iniciarlo.",
+    "nl": "De stoep rechts is open en druk. De last komt er nooit overheen."
+  },
+  "teaches": [
+    "public_exclusion",
+    "slew_planning"
+  ],
+  "payload_kg": 700,
+  "below_hook_kg": 60,
+  "load_size": [
+    1.1,
+    0.8,
+    1
+  ],
+  "load_material": "wood_pallet",
+  "rigging": {
+    "legs": 4,
+    "angle_deg": 55,
+    "wll_per_leg_kg": 1200
+  },
+  "pickup": {
+    "x": 3.5,
+    "z": 5,
+    "radius": 1.6
+  },
+  "dropoff": {
+    "x": -5.5,
+    "z": 5.5,
+    "radius": 1.5
+  },
+  "wind_ms": 5,
+  "success": {
+    "max_swing_deg": 6,
+    "dwell_s": 1.5,
+    "height_tol_m": 1.1,
+    "placement_tol_m": 0.6,
+    "time_target_s": 250
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": true
+  }
+}

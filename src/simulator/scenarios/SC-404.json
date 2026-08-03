@@ -1,0 +1,59 @@
+{
+  "id": "SC-404",
+  "order": 4,
+  "programme": "mobile_advanced",
+  "machine": "MC-MOB-40T",
+  "environment": "ENV-SITE-LARGE",
+  "weather": "storm",
+  "title": {
+    "en": "The lift you refuse",
+    "es": "El izado que rechazas",
+    "nl": "De hijs die je weigert"
+  },
+  "briefing": {
+    "en": "Read the wind before you touch anything. The correct outcome here may be that this load does not move today. Taking the controls and then putting them down (X) without lifting is a valid, professional decision — and on this job it is the one that scores a pass.",
+    "es": "Lee el viento antes de tocar nada. El resultado correcto aquí puede ser que esta carga no se mueva hoy. Coger los mandos y volver a soltarlos (X) sin izar es una decisión profesional válida, y en este trabajo es la que aprueba.",
+    "nl": "Lees eerst de wind. Soms is niet hijsen het juiste antwoord. Bediening pakken en weer neerleggen (X) is hier juist."
+  },
+  "teaches": [
+    "stop_work",
+    "wind_limits",
+    "professional_judgement"
+  ],
+  "payload_kg": 3000,
+  "below_hook_kg": 200,
+  "load_size": [
+    3,
+    2,
+    2.4
+  ],
+  "load_material": "wood",
+  "rigging": {
+    "legs": 4,
+    "angle_deg": 55,
+    "wll_per_leg_kg": 4000
+  },
+  "pickup": {
+    "x": 0,
+    "z": 10,
+    "radius": 2.4
+  },
+  "dropoff": {
+    "x": -14,
+    "z": 6,
+    "radius": 2.4
+  },
+  "wind_ms": 12,
+  "success": {
+    "max_swing_deg": 6,
+    "dwell_s": 2,
+    "height_tol_m": 1.4,
+    "placement_tol_m": 1,
+    "time_target_s": 400
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": true,
+    "stop_work_expected": true
+  }
+}

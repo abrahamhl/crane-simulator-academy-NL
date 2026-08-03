@@ -1,0 +1,58 @@
+{
+  "id": "SC-304",
+  "order": 4,
+  "programme": "tower_site",
+  "machine": "MC-TWR-45M",
+  "environment": "ENV-SITE-LARGE",
+  "weather": "dusk",
+  "title": {
+    "en": "Last lift of the day",
+    "es": "El último izado del día",
+    "nl": "De laatste hijs van de dag"
+  },
+  "briefing": {
+    "en": "Wind has been building all afternoon and the light is going. A tower crane at 22 m radius gives the wind a long lever on a swinging load. Short inputs, and let it settle between them.",
+    "es": "El viento ha ido subiendo toda la tarde y se va la luz. Una grúa torre a 22 m de radio le da al viento una palanca larga sobre una carga que balancea. Acciones cortas y deja que se estabilice entre ellas.",
+    "nl": "De wind is toegenomen en het licht gaat weg. Korte bewegingen, laten uitzwingen."
+  },
+  "teaches": [
+    "wind",
+    "swing_control",
+    "low_light"
+  ],
+  "payload_kg": 2200,
+  "below_hook_kg": 150,
+  "load_size": [
+    2.2,
+    1,
+    1.6
+  ],
+  "load_material": "steel_raw",
+  "rigging": {
+    "legs": 2,
+    "angle_deg": 50,
+    "wll_per_leg_kg": 3000
+  },
+  "pickup": {
+    "x": -4,
+    "z": 22,
+    "radius": 2.2
+  },
+  "dropoff": {
+    "x": 24,
+    "z": -14,
+    "radius": 2.2
+  },
+  "wind_ms": 9,
+  "success": {
+    "max_swing_deg": 4,
+    "dwell_s": 2,
+    "height_tol_m": 1.4,
+    "placement_tol_m": 0.8,
+    "time_target_s": 340
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": false
+  }
+}

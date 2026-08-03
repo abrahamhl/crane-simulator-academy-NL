@@ -1,0 +1,58 @@
+{
+  "id": "SC-503",
+  "order": 3,
+  "programme": "port_rail",
+  "machine": "MC-RAIL-25T",
+  "environment": "ENV-RAILYARD",
+  "weather": "overcast",
+  "title": {
+    "en": "Inside the possession",
+    "es": "Dentro del bloqueo",
+    "nl": "Binnen de buitendienststelling"
+  },
+  "briefing": {
+    "en": "You are on track 1 and track 2 is open to traffic. The load does not cross it, at any height, at any time. Stabilisers down first, then a short lift of concrete sleepers from the stack onto the formation.",
+    "es": "Estás en la vía 1 y la vía 2 está abierta al tráfico. La carga no la cruza, a ninguna altura ni en ningún momento. Primero los estabilizadores, luego un izado corto de traviesas desde el acopio a la plataforma.",
+    "nl": "Je staat op spoor 1; spoor 2 is in dienst. De last komt er nooit boven."
+  },
+  "teaches": [
+    "possession",
+    "adjacent_track",
+    "rail_crane"
+  ],
+  "payload_kg": 2400,
+  "below_hook_kg": 100,
+  "load_size": [
+    2.8,
+    0.8,
+    2.6
+  ],
+  "load_material": "concrete_dirty",
+  "rigging": {
+    "legs": 4,
+    "angle_deg": 60,
+    "wll_per_leg_kg": 3000
+  },
+  "pickup": {
+    "x": 34,
+    "z": -5,
+    "radius": 2.2
+  },
+  "dropoff": {
+    "x": 38,
+    "z": 0,
+    "radius": 2
+  },
+  "wind_ms": 6,
+  "success": {
+    "max_swing_deg": 5,
+    "dwell_s": 1.8,
+    "height_tol_m": 1.4,
+    "placement_tol_m": 0.8,
+    "time_target_s": 320
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": true
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "SC-501",
+  "order": 1,
+  "programme": "port_rail",
+  "machine": "MC-STS-CONT",
+  "environment": "ENV-PORT",
+  "weather": "clear",
+  "title": {
+    "en": "Yard to truck",
+    "es": "Del patio al camión",
+    "nl": "Van de stack naar de truck"
+  },
+  "briefing": {
+    "en": "A 20-foot box out of the stack gap and onto the lane between two waiting trucks. Long axes, huge mass, and a target you must hit within about a third of a metre. The trolley is your reach — the gantry itself barely needs to move.",
+    "es": "Un contenedor de 20 pies desde el hueco de la pila hasta el carril entre dos camiones en espera. Ejes largos, masa enorme y un objetivo que hay que acertar en unos treinta centímetros. El carro es tu alcance: el pórtico apenas necesita moverse.",
+    "nl": "Een 20-voets container uit het gat in de stapel naar de baan tussen twee trucks."
+  },
+  "teaches": [
+    "gantry",
+    "spreader",
+    "precision"
+  ],
+  "payload_kg": 18000,
+  "below_hook_kg": 10000,
+  "load_size": [
+    6.06,
+    2.59,
+    2.44
+  ],
+  "load_material": "container_blue",
+  "rigging": {
+    "legs": 4,
+    "angle_deg": 90,
+    "wll_per_leg_kg": 15000
+  },
+  "pickup": {
+    "x": 26.5,
+    "z": 26,
+    "radius": 2.6
+  },
+  "dropoff": {
+    "x": 17,
+    "z": 37,
+    "radius": 2.2
+  },
+  "wind_ms": 7,
+  "success": {
+    "max_swing_deg": 3,
+    "dwell_s": 2,
+    "height_tol_m": 1.8,
+    "placement_tol_m": 0.4,
+    "time_target_s": 300
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": false
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "SC-105",
+  "order": 5,
+  "programme": "basic_indoor",
+  "machine": "MC-OVH-05T",
+  "environment": "ENV-HALL",
+  "weather": "night",
+  "title": {
+    "en": "Night shift",
+    "es": "Turno de noche",
+    "nl": "Nachtdienst"
+  },
+  "briefing": {
+    "en": "Same hall, worklights only. Depth is much harder to judge in artificial light — use the hook camera (TAB) and the minimap rather than trusting your eye.",
+    "es": "La misma nave, solo con focos. La profundidad es mucho más difícil de juzgar con luz artificial: usa la cámara de gancho (TAB) y el minimapa en vez de fiarte de la vista.",
+    "nl": "Zelfde hal, alleen werklampen. Diepte inschatten is lastig — gebruik de haakcamera."
+  },
+  "teaches": [
+    "low_light",
+    "camera_use",
+    "depth_judgement"
+  ],
+  "payload_kg": 560,
+  "below_hook_kg": 40,
+  "load_size": [
+    1.2,
+    0.9,
+    1.2
+  ],
+  "load_material": "wood_pallet",
+  "rigging": {
+    "legs": 2,
+    "angle_deg": 60,
+    "wll_per_leg_kg": 1000
+  },
+  "pickup": {
+    "x": 20,
+    "z": 12,
+    "radius": 1.8
+  },
+  "dropoff": {
+    "x": 46,
+    "z": 6.5,
+    "radius": 1.6
+  },
+  "wind_ms": 2,
+  "success": {
+    "max_swing_deg": 5,
+    "dwell_s": 1.5,
+    "height_tol_m": 1,
+    "placement_tol_m": 0.7,
+    "time_target_s": 300
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": false
+  }
+}

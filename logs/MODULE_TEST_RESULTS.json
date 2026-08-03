@@ -1,0 +1,120 @@
+{
+  "all_ok": true,
+  "date": "2026-07-17",
+  "godot": "4.6.3-stable (official)",
+  "passed": 22,
+  "suite": "slice001_module_tests",
+  "tests": [
+    {
+      "detail": "T(4m)=4.0188 s, T(8m)=5.6834 s",
+      "id": "longer_cable_longer_period",
+      "ok": true
+    },
+    {
+      "detail": "T(4m) vs 2*PI*sqrt(L/g)=4.0128 s (err 0.15%); T8/T4=1.4142 vs sqrt(2) (err 0.00%)",
+      "id": "period_matches_theory",
+      "ok": true
+    },
+    {
+      "detail": "hash A=a5aa33c4e1fcc06030e0d0fae6c6734d, hash B=a5aa33c4e1fcc06030e0d0fae6c6734d",
+      "id": "seeded_run_deterministic",
+      "ok": true
+    },
+    {
+      "detail": "wind hash=a5aa33c4e1fcc06030e0d0fae6c6734d vs no-wind hash=ef6d8508b09600fd9ef25ec41159af66",
+      "id": "wind_changes_trajectory",
+      "ok": true
+    },
+    {
+      "detail": "no-wind hashes across different seeds: ef6d8508b09600fd9ef25ec41159af66 vs ef6d8508b09600fd9ef25ec41159af66",
+      "id": "zero_wind_deterministic",
+      "ok": true
+    },
+    {
+      "detail": "mean x offset: 0.000000 m (no wind) vs 0.1149 m (8 m/s wind +X)",
+      "id": "wind_causes_lateral_displacement",
+      "ok": true
+    },
+    {
+      "detail": "0 non-finite observations over 3600 steps (slack/shock + gusts + hoist sweep)",
+      "id": "no_nan_or_infinity_under_stress",
+      "ok": true
+    },
+    {
+      "detail": "phases: not_started -> carrying -> delivered, score.passed=true (max_swing=0.50)",
+      "id": "objectives_pickup_then_delivery",
+      "ok": true
+    },
+    {
+      "detail": "delivered=true passed=false max_swing=5.00 (limit 2.0)",
+      "id": "objectives_fails_on_excess_swing",
+      "ok": true
+    },
+    {
+      "detail": "outside(outside) -> in_zone(in_zone) -> interact=true -> controlling(controlling) -> still controlling while player moves away(controlling) -> exit=true(outside) -> outside(outside)",
+      "id": "machine_access_full_cycle",
+      "ok": true
+    },
+    {
+      "detail": "danger=true push_len=3.35 overlap(yes/no)=true/false floor(hit/clear)=true/false column(hit/clear)=true/false",
+      "id": "load_body_collision_math",
+      "ok": true
+    },
+    {
+      "detail": "floor: hit=true center.y=0.450 vel=(0.8, 0.9, 0.4) (clear=false, leaving=false) | column: hit=true center.x=10.800 vel=(0.6, 0.0, 0.8) (clear=false)",
+      "id": "load_body_impact_response",
+      "ok": true
+    },
+    {
+      "detail": "1.0 m away (radius 2.0 m): near=true; 3.0 m away: near=false",
+      "id": "load_safety_radius_distinguishes_near_miss",
+      "ok": true
+    },
+    {
+      "detail": "7 machines checked; all consistent",
+      "id": "catalog_integrity",
+      "ok": true
+    },
+    {
+      "detail": "unpowered_idle=true clamped_at=58.000 (limit 58.0) reverses=true estop_stops=true",
+      "id": "rig_axis_limits_and_accel",
+      "ok": true
+    },
+    {
+      "detail": "overhead/tower/mobile/railway heads and radii; all match hand-computed values",
+      "id": "rig_kinematics_per_class",
+      "ok": true
+    },
+    {
+      "detail": "stowed=true slew_locked=true hoist_free=true deployed=true slew_free=true footprint 1.30->3.60 m",
+      "id": "rig_outrigger_interlock",
+      "ok": true
+    },
+    {
+      "detail": "plateau=40000 exact=21000 interp@9m=14500 (expect 14500) beyond=0 flat=5000",
+      "id": "load_chart_lookup",
+      "ok": true
+    },
+    {
+      "detail": "max radius: 14.5 t -> 9.00 m (expect 9.00), 50 t -> 0.00 m (expect 0), 0.1 t -> 12.00 m; 2.5 t at 12 m = 30.0 tm",
+      "id": "load_chart_planning",
+      "ok": true
+    },
+    {
+      "detail": "factors 90/60/45/30 = 1.000/1.155/1.414/2.000; 1 t on 2 legs: 500 kg at 90deg, 1000 kg at 30deg; 4-leg rated on 2 = 500 kg; 25deg rejected=true",
+      "id": "rigging_math",
+      "ok": true
+    },
+    {
+      "detail": "resisting arm front/side = 3.60/3.40 m; factor at 12 m corner/front/side = 5.35/3.43/3.16; inside=inf heavier=1.90; max_stable_radius 21.53 m -> factor 1.500 (target 1.50); bands_ok=true",
+      "id": "stability_model",
+      "ok": true
+    },
+    {
+      "detail": "10/10 state cases correct, step order monotonic",
+      "id": "guidance_state_machine",
+      "ok": true
+    }
+  ],
+  "total": 22
+}

@@ -1,0 +1,58 @@
+{
+  "id": "SC-301",
+  "order": 1,
+  "programme": "tower_site",
+  "machine": "MC-TWR-45M",
+  "environment": "ENV-SITE-LARGE",
+  "weather": "clear",
+  "title": {
+    "en": "Slew and radius",
+    "es": "Giro y radio",
+    "nl": "Zwenken en vlucht"
+  },
+  "briefing": {
+    "en": "No straight travel on this machine: A and D slew the whole jib, W and S run the trolley out and in. Your radius IS the trolley position, and it is what the load chart is indexed by.",
+    "es": "Esta máquina no avanza en línea recta: A y D giran toda la pluma, W y S sacan y meten el carro. Tu radio ES la posición del carro, y es lo que indexa la tabla de cargas.",
+    "nl": "Geen recht rijden: A en D zwenken de giek, W en S verplaatsen de kat."
+  },
+  "teaches": [
+    "slew",
+    "radius",
+    "tower_controls"
+  ],
+  "payload_kg": 2000,
+  "below_hook_kg": 120,
+  "load_size": [
+    1.6,
+    1.2,
+    1.6
+  ],
+  "load_material": "concrete",
+  "rigging": {
+    "legs": 4,
+    "angle_deg": 60,
+    "wll_per_leg_kg": 2500
+  },
+  "pickup": {
+    "x": 16,
+    "z": 0,
+    "radius": 2.4
+  },
+  "dropoff": {
+    "x": 0,
+    "z": -20,
+    "radius": 2.4
+  },
+  "wind_ms": 5,
+  "success": {
+    "max_swing_deg": 7,
+    "dwell_s": 1.5,
+    "height_tol_m": 1.4,
+    "placement_tol_m": 1,
+    "time_target_s": 260
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": false
+  }
+}

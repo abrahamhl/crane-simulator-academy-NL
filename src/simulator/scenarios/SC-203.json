@@ -1,0 +1,58 @@
+{
+  "id": "SC-203",
+  "order": 3,
+  "programme": "street_loader",
+  "machine": "MC-LDR-8TM",
+  "environment": "ENV-SITE-STREET",
+  "weather": "rain",
+  "title": {
+    "en": "Under the overhead line, in the wet",
+    "es": "Bajo la catenaria, con lluvia",
+    "nl": "Onder de bovenleiding, in de regen"
+  },
+  "briefing": {
+    "en": "There is a live line at 8.4 m across the whole street. Keep the boom and the load well under it, and remember the ground is wet — your outrigger pads have less to hold on to than they did yesterday.",
+    "es": "Hay una línea en tensión a 8,4 m que cruza toda la calle. Mantén la pluma y la carga bien por debajo, y recuerda que el suelo está mojado: las placas de los estabilizadores agarran menos que ayer.",
+    "nl": "Er hangt een spanningvoerende lijn op 8,4 m. Blijf er ruim onder."
+  },
+  "teaches": [
+    "overhead_line",
+    "height_awareness",
+    "wet_ground"
+  ],
+  "payload_kg": 900,
+  "below_hook_kg": 60,
+  "load_size": [
+    1.3,
+    1,
+    1.1
+  ],
+  "load_material": "steel_rusty",
+  "rigging": {
+    "legs": 2,
+    "angle_deg": 50,
+    "wll_per_leg_kg": 1800
+  },
+  "pickup": {
+    "x": 0,
+    "z": 5,
+    "radius": 1.7
+  },
+  "dropoff": {
+    "x": 7.5,
+    "z": 1,
+    "radius": 1.6
+  },
+  "wind_ms": 6,
+  "success": {
+    "max_swing_deg": 6,
+    "dwell_s": 1.5,
+    "height_tol_m": 1.2,
+    "placement_tol_m": 0.7,
+    "time_target_s": 260
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": true
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "SC-502",
+  "order": 2,
+  "programme": "port_rail",
+  "machine": "MC-STS-CONT",
+  "environment": "ENV-PORT",
+  "weather": "fog",
+  "title": {
+    "en": "Fog on the quay",
+    "es": "Niebla en el muelle",
+    "nl": "Mist op de kade"
+  },
+  "briefing": {
+    "en": "Forty-five metres of visibility, and thirty-eight metres of crane above you. You will be working almost entirely off the hook camera and the minimap. Whatever you do, the box does not go out over the water.",
+    "es": "Cuarenta y cinco metros de visibilidad y treinta y ocho metros de grúa por encima. Trabajarás casi por completo con la cámara de gancho y el minimapa. Pase lo que pase, el contenedor no sale sobre el agua.",
+    "nl": "Vijfenveertig meter zicht. Werk op de haakcamera. De container gaat niet over het water."
+  },
+  "teaches": [
+    "fog",
+    "instrument_work",
+    "quay_edge"
+  ],
+  "payload_kg": 21000,
+  "below_hook_kg": 10000,
+  "load_size": [
+    6.06,
+    2.59,
+    2.44
+  ],
+  "load_material": "container_red",
+  "rigging": {
+    "legs": 4,
+    "angle_deg": 90,
+    "wll_per_leg_kg": 15000
+  },
+  "pickup": {
+    "x": 41.5,
+    "z": 26,
+    "radius": 2.6
+  },
+  "dropoff": {
+    "x": 61,
+    "z": 37,
+    "radius": 2.2
+  },
+  "wind_ms": 3,
+  "success": {
+    "max_swing_deg": 2.5,
+    "dwell_s": 2.2,
+    "height_tol_m": 1.8,
+    "placement_tol_m": 0.35,
+    "time_target_s": 360
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": false
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "SC-302",
+  "order": 2,
+  "programme": "tower_site",
+  "machine": "MC-TWR-45M",
+  "environment": "ENV-SITE-LARGE",
+  "weather": "overcast",
+  "title": {
+    "en": "Long radius pick",
+    "es": "Recogida a radio largo",
+    "nl": "Oppakken op grote vlucht"
+  },
+  "briefing": {
+    "en": "The pick is 25 m out, and capacity there is a fraction of what it is close in. Note also that the direct slew from pick to set-down passes over the site compound — go the other way round.",
+    "es": "La recogida está a 25 m y la capacidad allí es una fracción de la que hay cerca. Fíjate además en que el giro directo de recogida a entrega pasa sobre el recinto de obra: da la vuelta por el otro lado.",
+    "nl": "Het oppakpunt ligt 25 m uit. De directe zwenk gaat over het compound — draai andersom."
+  },
+  "teaches": [
+    "derating",
+    "route_planning",
+    "exclusion_zone"
+  ],
+  "payload_kg": 2600,
+  "below_hook_kg": 150,
+  "load_size": [
+    2,
+    1,
+    1.4
+  ],
+  "load_material": "steel_rusty",
+  "rigging": {
+    "legs": 2,
+    "angle_deg": 55,
+    "wll_per_leg_kg": 3000
+  },
+  "pickup": {
+    "x": -22,
+    "z": 12,
+    "radius": 2.4
+  },
+  "dropoff": {
+    "x": 14,
+    "z": -6,
+    "radius": 2.2
+  },
+  "wind_ms": 6,
+  "success": {
+    "max_swing_deg": 5,
+    "dwell_s": 1.8,
+    "height_tol_m": 1.4,
+    "placement_tol_m": 0.9,
+    "time_target_s": 300
+  },
+  "rules": {
+    "no_overload": true,
+    "require_outriggers": false
+  }
+}
